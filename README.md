@@ -1,15 +1,15 @@
 # Create React App [![Build Status](https://dev.azure.com/facebook/create-react-app/_apis/build/status/facebook.create-react-app?branchName=master)](https://dev.azure.com/facebook/create-react-app/_build/latest?definitionId=1&branchName=master) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)](https://github.com/facebook/create-react-app/pulls)
 
-Create React apps with no build configuration.
+Создавайте приложения React без конфигурации сборки.
 
-- [Creating an App](#creating-an-app) – How to create a new app.
-- [User Guide](https://facebook.github.io/create-react-app/) – How to develop apps bootstrapped with Create React App.
+- [Creating an App](#создание-приложения) – Как создать новое приложение.
+- [User Guide](https://facebook.github.io/create-react-app/) – Как разрабатывать приложения, загруженные с помощью Create React App.
 
-Create React App works on macOS, Windows, and Linux.<br>
-If something doesn’t work, please [file an issue](https://github.com/facebook/create-react-app/issues/new).<br>
-If you have questions or need help, please ask in our [Spectrum](https://spectrum.chat/create-react-app) community.
+**Create React App** работает на MacOS, Windows и Linux.<br>
+Если что-то не работает, пожалуйста, [сообщите о проблеме](https://github.com/facebook/create-react-app/issues/new).<br>
+Если вам нужна помощь или у вас есть вопросы - пожалуйста, задайте их в нашем [Spectrum](https://spectrum.chat/create-react-app) сообществе.
 
-## Quick Overview
+## Краткая информация
 
 ```sh
 npx create-react-app my-app
@@ -17,27 +17,28 @@ cd my-app
 npm start
 ```
 
-_([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) comes with npm 5.2+ and higher, see [instructions for older npm versions](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f))_
+_([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) поставляется с npm 5.2+ и выше, см. [инструкции для более старых версий npm](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f))_
 
-Then open [http://localhost:3000/](http://localhost:3000/) to see your app.<br>
-When you’re ready to deploy to production, create a minified bundle with `npm run build`.
+Затем откройте [http://localhost:3000/](http://localhost:3000/), чтобы увидеть ваше приложение.<br>
+Когда будете готовы к развертыванию, создайте минимизированный пакет с `npm run build`.
 
 <p align='center'>
 <img src='https://cdn.jsdelivr.net/gh/facebook/create-react-app@27b42ac7efa018f2541153ab30d63180f5fa39e0/screencast.svg' width='600' alt='npm start'>
 </p>
 
-### Get Started Immediately
+### Начните немедленно
 
-You **don’t** need to install or configure tools like Webpack or Babel.<br>
-They are preconfigured and hidden so that you can focus on the code.
+Вам **не нужно** устанавливать или настраивать такие инструменты, как Webpack или Babel.<br>
+Они предварительно настроены и скрыты, так что вы можете сосредоточиться на коде.
 
-Create a project, and you’re good to go.
+Создайте проект, и все готово.
 
-## Creating an App
+## Создание приложения
 
-**You’ll need to have Node 8.16.0 or Node 10.16.0 or later version on your local development machine** (but it’s not required on the server). You can use [nvm](https://github.com/creationix/nvm#installation) (macOS/Linux) or [nvm-windows](https://github.com/coreybutler/nvm-windows#node-version-manager-nvm-for-windows) to switch Node versions between different projects.
+**Для разработки вам понадобится Node 8.16.0 или Node 10.16.0 или более поздняя версия на вашем локальном компьютере** (но это не требуется на сервере). Вы можете использовать [nvm](https://github.com/creationix/nvm#installation) (macOS/Linux)  
+или [nvm-windows](https://github.com/coreybutler/nvm-windows#node-version-manager-nvm-for-windows) для переключения версий Node между различными проектами.
 
-To create a new app, you may choose one of the following methods:
+Чтобы создать новое приложение, вы можете выбрать один из следующих методов:
 
 ### npx
 
@@ -45,7 +46,7 @@ To create a new app, you may choose one of the following methods:
 npx create-react-app my-app
 ```
 
-_([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) is a package runner tool that comes with npm 5.2+ and higher, see [instructions for older npm versions](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f))_
+_([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) это инструмент для запуска пакетов, который поставляется с npm 5.2+ и выше, см. [instructions for older npm versions](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f))_
 
 ### npm
 
@@ -53,7 +54,7 @@ _([npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7
 npm init react-app my-app
 ```
 
-_`npm init <initializer>` is available in npm 6+_
+_`npm init <initializer>` доступен в npm 6+_
 
 ### Yarn
 
@@ -61,10 +62,10 @@ _`npm init <initializer>` is available in npm 6+_
 yarn create react-app my-app
 ```
 
-_`yarn create` is available in Yarn 0.25+_
+_`yarn create` доступен в Yarn 0.25+_
 
-It will create a directory called `my-app` inside the current folder.<br>
-Inside that directory, it will generate the initial project structure and install the transitive dependencies:
+Он создаст каталог с именем `my-app` внутри текущей папки.<br>
+Внутри этого каталога он сгенерирует исходную структуру проекта и установит переходные зависимости:
 
 ```
 my-app
@@ -86,44 +87,44 @@ my-app
     └── serviceWorker.js
 ```
 
-No configuration or complicated folder structures, only the files you need to build your app.<br>
-Once the installation is done, you can open your project folder:
+Нет конфигурации или сложной структуры папок, только файлы, необходимые для создания приложения.<br>
+После завершения установки вы можете открыть папку вашего проекта:
 
 ```sh
 cd my-app
 ```
 
-Inside the newly created project, you can run some built-in commands:
+Внутри недавно созданного проекта вы можете запустить несколько встроенных команд:
 
-### `npm start` or `yarn start`
+### `npm start` или `yarn start`
 
-Runs the app in development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Запускает приложение в режиме разработки.<br>
+Откройте [http://localhost:3000](http://localhost:3000), чтобы просмотреть его в браузере.
 
-The page will automatically reload if you make changes to the code.<br>
-You will see the build errors and lint warnings in the console.
+Страница автоматически перезагрузится, если вы внесете изменения в код.<br>
+Вы увидите ошибки сборки и предупреждения lint в консоли.
 
 <p align='center'>
 <img src='https://cdn.jsdelivr.net/gh/marionebl/create-react-app@9f6282671c54f0874afd37a72f6689727b562498/screencast-error.svg' width='600' alt='Build errors'>
 </p>
 
-### `npm test` or `yarn test`
+### `npm test` или `yarn test`
 
-Runs the test watcher in an interactive mode.<br>
-By default, runs tests related to files changed since the last commit.
+Запускает тестовый наблюдатель в интерактивном режиме.<br>
+По умолчанию запускаются тесты, связанные с файлами, измененными с момента последней фиксации.
 
-[Read more about testing.](https://facebook.github.io/create-react-app/docs/running-tests)
+[Узнайте больше о тестировании.](https://facebook.github.io/create-react-app/docs/running-tests)
 
-### `npm run build` or `yarn build`
+### `npm run build` или `yarn build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Создает приложение для производства в папке `build`.<br>
+Он корректно объединяет React в производственном режиме и оптимизирует сборку для лучшей производительности.
 
-The build is minified and the filenames include the hashes.<br>
+Сборка минимизирована, а имена файлов содержат хэши.<br>
 
-Your app is ready to be deployed.
+Ваше приложение готово к развертыванию.
 
-## User Guide
+## Гид пользователя
 
 You can find detailed instructions on using Create React App and many tips in [its documentation](https://facebook.github.io/create-react-app/).
 
