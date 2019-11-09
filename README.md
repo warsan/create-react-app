@@ -126,48 +126,48 @@ cd my-app
 
 ## Гид пользователя
 
-You can find detailed instructions on using Create React App and many tips in [its documentation](https://facebook.github.io/create-react-app/).
+Подробные инструкции по использованию Create React App и многие советы можно найти в [её документации](https://facebook.github.io/create-react-app/).
 
-## How to Update to New Versions?
+## Как обновить до новой версии?
 
-Please refer to the [User Guide](https://facebook.github.io/create-react-app/docs/updating-to-new-releases) for this and other information.
+Для получения дополнительной информации см. [Руководство пользователя](https://facebook.github.io/create-react-app/docs/update-to-new-releases).
 
-## Philosophy
+## Философия
 
-- **One Dependency:** There is only one build dependency. It uses Webpack, Babel, ESLint, and other amazing projects, but provides a cohesive curated experience on top of them.
+- **Одна зависимость:** Существует только одна зависимость сборки. Она использует Webpack, Babel, ESLint и другие удивительные проекты, но обеспечивает сплоченный кураторский опыт поверх них.
 
-- **No Configuration Required:** You don't need to configure anything. A reasonably good configuration of both development and production builds is handled for you so you can focus on writing code.
+- ** Не требуется настройка:** Вам не нужно ничего настраивать. Достаточно хорошая конфигурация как разработки, так и производственных сборок обрабатывается для вас, поэтому вы можете сосредоточиться на написании кода.
 
-- **No Lock-In:** You can “eject” to a custom setup at any time. Run a single command, and all the configuration and build dependencies will be moved directly into your project, so you can pick up right where you left off.
+- **Нет блокировки:** Вы можете “извлечь” в пользовательскую установку в любое время. Выполните одну команду, и все зависимости конфигурации и сборки будут перенесены непосредственно в ваш проект, чтобы продолжить работу с того места, где остановились.
 
-## What’s Included?
+## Что включено?
 
-Your environment will have everything you need to build a modern single-page React app:
+В вашей среде будет все необходимое для создания современного одностраничного приложения React:
 
-- React, JSX, ES6, TypeScript and Flow syntax support.
-- Language extras beyond ES6 like the object spread operator.
-- Autoprefixed CSS, so you don’t need `-webkit-` or other prefixes.
-- A fast interactive unit test runner with built-in support for coverage reporting.
-- A live development server that warns about common mistakes.
-- A build script to bundle JS, CSS, and images for production, with hashes and sourcemaps.
-- An offline-first [service worker](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers) and a [web app manifest](https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/), meeting all the [Progressive Web App](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app) criteria. (_Note: Using the service worker is opt-in as of `react-scripts@2.0.0` and higher_)
-- Hassle-free updates for the above tools with a single dependency.
+- Поддержка синтаксиса React, JSX, ES6, TypeScript и Flow.
+- Язык экстры за пределами ES6, как оператор распространения объекта.
+- Autoprefixed CSS, где не нужны `-webkit-` или другие префиксы.
+- Быстрый интерактивный модульный тестовый бегун со встроенной поддержкой отчетов о покрытии.
+- Живой сервер разработки, предупреждающий о распространенных ошибках.
+- Сценарий сборки для связывания JS, CSS и изображений для производства с хэшами и исходными картами.
+- Офлайн-первый [сервисный работник](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers) и [web app manifest](https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/), собрание всех [Progressive Web App](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app) критерий. _(Примечание: использование работника службы является опционом с момента `react-scripts@2.0.0-и выше)_
+- Беспроблемные обновления для вышеуказанных инструментов с одной зависимостью.
 
-Check out [this guide](https://github.com/nitishdayal/cra_closer_look) for an overview of how these tools fit together.
+Проверьте [это руководство](https://github.com/nitishdayal/cra_closer_look) для обзора того, как эти инструменты сочетаются друг с другом.
 
-The tradeoff is that **these tools are preconfigured to work in a specific way**. If your project needs more customization, you can ["eject"](https://facebook.github.io/create-react-app/docs/available-scripts#npm-run-eject) and customize it, but then you will need to maintain this configuration.
+Компромисс заключается в том, что **эти инструменты предварительно настроены для работы определенным образом**. Если ваш проект нуждается в дополнительной настройке, вы можете ["извлечь"](https://facebook.github.io/create-react-app/docs/available-scripts#npm-run-eject) и настроить его, но тогда вам нужно будет поддерживать эту конфигурацию.
 
-## Popular Alternatives
+## Популярная альтернатива
 
-Create React App is a great fit for:
+Create React App отлично подходит для:
 
-- **Learning React** in a comfortable and feature-rich development environment.
-- **Starting new single-page React applications.**
-- **Creating examples** with React for your libraries and components.
+- **Изучения React** в удобной и многофункциональной среде разработки.
+- **Запуск новых одностраничных приложений React.**
+- **Создание примеров** с помощью React для ваших библиотек и компонентов.
 
-Here are a few common cases where you might want to try something else:
+Вот несколько распространенных случаев, когда вы можете попробовать что-то еще:
 
-- If you want to **try React** without hundreds of transitive build tool dependencies, consider [using a single HTML file or an online sandbox instead](https://reactjs.org/docs/try-react.html).
+- Если вы хотите **попробовать React** без сотен переходных зависимостей инструмента построения, попробуйте [использовать один HTML-файл или сетевую изолированную среду вместо](https://reactjs.org/docs/try-react.html).
 
 - If you need to **integrate React code with a server-side template framework** like Rails, Django or Symfony, or if you’re **not building a single-page app**, consider using [nwb](https://github.com/insin/nwb), or [Neutrino](https://neutrino.js.org/) which are more flexible. For Rails specifically, you can use [Rails Webpacker](https://github.com/rails/webpacker). For Symfony, try [Symfony's Webpack Encore](https://symfony.com/doc/current/frontend/encore/reactjs.html).
 
@@ -179,27 +179,27 @@ Here are a few common cases where you might want to try something else:
 
 - Finally, if you need **more customization**, check out [Neutrino](https://neutrino.js.org/) and its [React preset](https://neutrino.js.org/packages/react/).
 
-All of the above tools can work with little to no configuration.
+Все вышеупомянутые инструменты могут работать практически без конфигурации.
 
-If you prefer configuring the build yourself, [follow this guide](https://reactjs.org/docs/add-react-to-an-existing-app.html).
+Если вы предпочитаете настроить сборку самостоятельно, [следуйте этому руководству](https://reactjs.org/docs/add-react-to-an-existing-app.html).
 
-## Contributing
+## Содействие
 
-We'd love to have your helping hand on `create-react-app`! See [CONTRIBUTING.md](CONTRIBUTING.md) for more information on what we're looking for and how to get started.
+Мы рады получить вашу помощь в `create-react-app`! См. [CONTRIBUTING.md](CONTRIBUTING.md) для получения дополнительной информации о том, что мы ищем и как начать работу.
 
 ## React Native
 
-Looking for something similar, but for React Native?<br>
-Check out [Expo CLI](https://github.com/expo/expo-cli).
+Ищете что-то похожее, но для React Native?<br>
+Проверьте [Expo CLI](https://github.com/expo/expo-cli).
 
-## Acknowledgements
+## Благодарности
 
-We are grateful to the authors of existing related projects for their ideas and collaboration:
+Мы благодарны авторам существующих сопутствующих проектов за их идеи и сотрудничество:
 
 - [@eanplatter](https://github.com/eanplatter)
 - [@insin](https://github.com/insin)
 - [@mxstbr](https://github.com/mxstbr)
 
-## License
+## Лицензия
 
-Create React App is open source software [licensed as MIT](https://github.com/facebook/create-react-app/blob/master/LICENSE).
+Create React App является открытым исходным кодом [licensed as MIT](https://github.com/facebook/create-react-app/blob/master/LICENSE).
