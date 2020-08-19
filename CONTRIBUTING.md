@@ -1,56 +1,59 @@
-# Contributing to Create React App
+# Желание внести свой вклад в Create React App
 
-Loving Create React App and want to get involved? Thanks! There are plenty of ways you can help.
+Вам нравится приложение Create React App, и вы хотите принять в нем участие? - Спасибо! Есть много способов помочь.
 
-Please take a moment to review this document in order to make the contribution process straightforward and effective for everyone involved.
+Пожалуйста, найдите время просмотреть весь документ, чтобы сделать процесс участия простым и эффективным для всех участников.
 
-Following these guidelines helps to communicate that you respect the time of the developers managing and developing this open source project. In return, they should reciprocate that respect in addressing your issue or assessing patches and features.
+Следование этим рекомендациям поможет понять, что вы уважаете время разработчиков, управляющих этим проектом с открытым исходным кодом, и разрабатывающих его. В свою очередь, они должны ответить вам взаимностью при рассмотрении вашей проблемы или оценке ваших исправлений и функций.
 
-## Core Ideas
+## Основные идеи
 
-As much as possible, we try to avoid adding configuration and flags. The purpose of this tool is to provide the best experience for people getting started with React, and this will always be our first priority. This means that sometimes we [sacrifice additional functionality](https://gettingreal.37signals.com/ch05_Half_Not_Half_Assed.php) (such as server rendering) because it is too hard to solve it in a way that wouldn’t require any configuration.
+Насколько это возможно, мы стараемся избегать добавления конфигурации и флагов. Цель этого инструмента - обеспечить лучшим опытом людей, начинающих работу с React, и это всегда будет нашим главным приоритетом. Это означает, что иногда мы [жертвуем дополнительной функциональностью](https://gettingreal.37signals.com/ch05_Half_Not_Half_Assed.php) (например, серверным рендерингом), поскольку это слишком сложно решить, не требуя никакой настройки.
 
-We prefer **convention, heuristics, or interactivity** over configuration.<br>
-Here are a few examples of them in action.
+Мы предпочитаем **условность, эвристику или интерактивность** - конфигурации.<br>
+Вот несколько таких примеров в действии.
 
-### Convention
+### Условность
 
 <!--alex disable easy-->
 
-Instead of letting the user specify the entry filename, we always assume it to be `src/index.js`. Rather than letting the user specify the output bundle name, we generate it, but make sure to include the content hash in it. Whenever possible, we want to leverage convention to make good choices for the user, especially in cases where it’s easy to misconfigure something.
+Вместо того, чтобы позволить пользователю указать имя файла записи, мы всегда предполагаем, что это `src/index.js`. Вместо того, чтобы позволять пользователю указывать имя выходного пакета, мы его генерируем, но обязательно включаем в него хэш содержимого. Когда это возможно, мы хотим использовать соглашения, чтобы сделать правильный выбор для пользователя, особенно в тех случаях, когда что-то легко настроить неправильно.
 
-### Heuristics
+### Эвристика
 
-Normally, `npm start` runs on port `3000`, and this is not explicitly configurable. However, some environments like cloud IDEs want the programs to run on a specific port to serve their output. We want to play well with different environments, so Create React App reads `PORT` environment variable and prefers it when it is specified. The trick is that we know cloud IDEs already specify it automatically, so there is no need for the user to do anything. Create React App relies on heuristics to do the right thing depending on environment.
+Обычно `npm start` работает на порте `3000`, и это не может быть явно настроено. Однако некоторые среды, такие как облачные IDE - хотят, чтобы программы запускались на определённом порту для обслуживания их вывода. Мы хотим хорошо работать с различными средами, поэтому приложение Create React App считывает переменную среды `PORT`, когда она указана и предпочитает именно её.
+Зная, что облачные IDE задают этот порт автоматически, пользователю ничего делать уже не нужно. Хитрость в том, что Create React App, полагаясь на эвристику, сам выберет правильные действия в зависимости от среды.
 
 <!--alex disable just-->
 
-Another example of this is how `npm test` normally launches the watcher, but if the `CI` environment variable is set, it will run tests once. We know that popular CI environments set this variable, so the user doesn’t need to do anything. It just works.
+Другой пример - как обычно `npm test` запускает наблюдатель, но если переменная среды `CI` установлена, она запустит тесты один раз.
+Мы знаем, что популярные среды CI устанавливают эту переменную, поэтому пользователю не нужно ничего делать. Просто работать.
 
-### Interactivity
+### Интерактивность
 
-We prefer to add interactivity to the command line interface rather than add configuration flags. For example, `npm start` will attempt to run with port `3000` by default, but it may be busy. Many other tools fail in this case and ask that you pass a different port, but Create React App will display a prompt asking if you’d like to run the app on the next available port.
+Мы предпочитаем добавлять интерактивность в интерфейс командной строки, а не добавлять флаги конфигурации. Например, `npm start` будет пытаться работать с портом` 3000` по умолчанию, но в случае его занятости зависимые от этого инструменты запросят выдать другой порт и лишь Create React App отобразит запрос и предложит запустить приложение на следующем доступном порту.
 
-Another example of interactivity is `npm test` watcher interface. Instead of asking people to pass command line flags for switching between test runner modes or search patterns, we print a hint with keys that you can press during the test session to instruct watcher what to do. Jest supports both flags and interactive CLI but Create React App prefers long-running sessions to keep user immersed in the flow over short-running sessions with different flags.
+Другой пример интерактивности - интерфейс наблюдателя `npm test`. Вместо того, чтобы просить людей передать флаги командной строки для переключения между режимами выполнения тестов или шаблонами поиска, мы печатаем подсказку с клавишами, нажимаемыми во время сеанса тестирования с указанием действий наблюдателю. Jest поддерживает как флаги, так и интерактивный интерфейс командной строки, но приложение Create React App предпочитает длительные сеансы, оставляя пользователя погруженным в поток в течение коротких сеансов с разными флагами.
 
-### Breaking the Rules
+### Нарушение правил
 
-No rules are perfect. Sometimes we may introduce flags or configuration if we believe the value is high enough to justify the complexity. For example, we know that apps may be hosted paths different from the root, and we need to support this use case. However, we still try to fall back to heuristics when possible. In this example, we ask that you specify `homepage` in `package.json`, and infer the correct path based on it. We also nudge the user to fill out the `homepage` after the build, so the user becomes aware that the feature exists.
+Нет идеальных правил. Иногда мы можем вводить флаги или конфигурацию считая их значение достаточно великим, чтобы оправдать сложность. Например, мы знаем, что у приложений могут быть размещены пути, отличные от корневого, и нам необходимо поддерживать этот вариант использования. Однако мы по прежнему стараемся прибегать к эвристике, когда это возможно. В этом примере мы просим вас указать `homepage` в` package.json` и вывести правильный путь на его основе. Мы также подталкиваем пользователя заполнить `homepage` после сборки, чтобы пользователь узнал, что функция существует.
 
-## Submitting a Pull Request
+## Отправка запроса на извлечение
 
-Good pull requests, such as patches, improvements, and new features, are a fantastic help. They should remain focused in scope and avoid containing unrelated commits.
+Хорошие запросы на вытягивание, такие как исправления, улучшения и новые функции, являются фантастическим подспорьем. Они должны оставаться сфокусированными по своему охвату и избегать несвязанных коммитов.
 
-Please **ask first** if somebody else is already working on this or the core developers think your feature is in-scope for Create React App. Generally always have a related issue with discussions for whatever you are including.
+Пожалуйста, **сначала спросите**, работает ли кто-то еще над этим или основные разработчики думают, что ваша функция входит в область действия приложения Create React App.   
+Как правило, всегда есть связанная с этим проблема обсуждения того, что вы включаете.
 
-Please also provide a **test plan**, i.e. specify how you verified that your addition works.
+Также предоставьте **план тестирования**, т.е. покажите надёжность работы вашего дополнения.
 
-## Folder Structure of Create React App
+## Структура папок Create React App
 
-`create-react-app` is a monorepo, meaning it is divided into independent sub-packages.<br>
-These packages can be found in the [`packages/`](https://github.com/facebook/create-react-app/tree/master/packages) directory.
+`create-react-app` - это монорепозиторий, то есть он разделён на независимые подпакеты.<br>
+Эти пакеты можно найти в каталоге [`packages/`](https://github.com/facebook/create-react-app/tree/master/packages).
 
-### Overview of directory structure
+### Обзор структуры каталогов
 
 ```
 packages/
