@@ -136,7 +136,7 @@ cd my-app
 
 - **Одна зависимость:** Существует только одна зависимость сборки. Она использует Webpack, Babel, ESLint и другие удивительные проекты, но обеспечивает сплоченный кураторский опыт поверх них.
 
-- ** Не требуется настройка:** Вам не нужно ничего настраивать. Достаточно хорошая конфигурация как разработки, так и производственных сборок обрабатывается для вас, поэтому вы можете сосредоточиться на написании кода.
+- **Не требуется настройка:** Вам не нужно ничего настраивать. Достаточно хорошая конфигурация как разработки, так и производственных сборок обрабатывается для вас, поэтому вы можете сосредоточиться на написании кода.
 
 - **Нет блокировки:** Вы можете “извлечь” в пользовательскую установку в любое время. Выполните одну команду, и все зависимости конфигурации и сборки будут перенесены непосредственно в ваш проект, чтобы продолжить работу с того места, где остановились.
 
@@ -169,15 +169,15 @@ Create React App отлично подходит для:
 
 - Если вы хотите **попробовать React** без сотен переходных зависимостей инструмента построения, попробуйте [использовать один HTML-файл или сетевую изолированную среду вместо](https://reactjs.org/docs/try-react.html).
 
-- If you need to **integrate React code with a server-side template framework** like Rails, Django or Symfony, or if you’re **not building a single-page app**, consider using [nwb](https://github.com/insin/nwb), or [Neutrino](https://neutrino.js.org/) which are more flexible. For Rails specifically, you can use [Rails Webpacker](https://github.com/rails/webpacker). For Symfony, try [Symfony's Webpack Encore](https://symfony.com/doc/current/frontend/encore/reactjs.html).
+- Если вам нужно **интегрировать React code с серверным фреймворком шаблонов**, таким как Rails, Django или Symfony, или если вы **не собираете одностраничное приложение**, подумайте об использовании [nwb](https://github.com/insin/nwb) или [Neutrino](https://neutrino.js.org/), которые являются более гибкими. Специально для Rails можно использовать [Rails Webpacker](https://github.com/rails/webpacker). Для Symfony попробуйте [Symfony's Webpack Encore](https://symfony.com/doc/current/frontend/encore/reactjs.html).
 
-- If you need to **publish a React component**, [nwb](https://github.com/insin/nwb) can [also do this](https://github.com/insin/nwb#react-components-and-libraries), as well as [Neutrino's react-components preset](https://neutrino.js.org/packages/react-components/).
+- Если вам нужно **публиковать React компонент**, используйте [nwb](https://github.com/insin/nwb), ещё можно [сделать это и здесь](https://github.com/insin/nwb#react-components-and-libraries), а также [предустановкой реактивных компонентов Нейтрино](https://neutrino.js.org/packages/react-components/).
 
-- If you want to do **server rendering** with React and Node.js, check out [Next.js](https://github.com/zeit/next.js/) or [Razzle](https://github.com/jaredpalmer/razzle). Create React App is agnostic of the backend, and only produces static HTML/JS/CSS bundles.
+- Если вы хотите сделать **серверный рендеринг** с помощью React и Node.js, посмотрите [Next.js](https://github.com/zeit/next.js/) или [Razzle](https://github.com/jaredpalmer/razzle). Create React App является агностичным по отношению к бэкэнду и производит только статические HTML/JS/CSS пакеты.
 
-- If your website is **mostly static** (for example, a portfolio or a blog), consider using [Gatsby](https://www.gatsbyjs.org/) instead. Unlike Create React App, it pre-renders the website into HTML at the build time.
+- Если ваш сайт **почти статичен** (например, портфолио или блог), подумайте об использовании [Gatsby](https://www.gatsbyjs.org/) вместо него. В отличие от Create React App, он предварительно возвращает сайт в HTML во время сборки.
 
-- Finally, if you need **more customization**, check out [Neutrino](https://neutrino.js.org/) and its [React preset](https://neutrino.js.org/packages/react/).
+- Наконец, если вам нужна **дополнительная настройка**, посмотрите [Neutrino](https://neutrino.js.org/) и его [React preset](https://neutrino.js.org/packages/react/).
 
 Все вышеупомянутые инструменты могут работать практически без конфигурации.
 
